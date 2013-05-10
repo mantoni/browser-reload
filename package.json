@@ -1,0 +1,17 @@
+{
+  "name"            : "browser-reload",
+  "version"         : "1.0.0",
+  "description"     : "Reload web pages on change",
+  "author"          : "Maximilian Antoni (http://maxantoni.de)",
+  "homepage"        : "https://github.com/mantoni/browser-reload.js",
+  "main"            : "./reload.js",
+  "repository"      : {
+    "type"          : "git",
+    "url"           : "https://github.com/mantoni/browser-reload.js.git"
+  },
+  "devDependencies" : {
+    "uglify-js"     : "~2.3.2",
+    "autolint"      : "~1.1.3"
+  },
+  "files"           : ["reload.js", "reload.min.js", "README.md", "LICENSE"]
+}
