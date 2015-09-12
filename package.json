@@ -2,9 +2,12 @@
   "name"            : "browser-reload",
   "version"         : "1.0.1",
   "description"     : "Reload web pages on change",
-  "author"          : "Maximilian Antoni (http://maxantoni.de)",
-  "homepage"        : "https://github.com/mantoni/browser-reload",
   "main"            : "./reload.js",
+  "author"          : "Maximilian Antoni (http://maxantoni.de)",
+  "contributors"    : [
+    "Stefan Kleeschulte <mail@smk.biz>"
+  ],
+  "homepage"        : "https://github.com/mantoni/browser-reload",
   "repository"      : {
     "type"          : "git",
     "url"           : "https://github.com/mantoni/browser-reload.git"
