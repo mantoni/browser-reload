@@ -2,7 +2,7 @@
   'use strict';
   /*globals location, XMLHttpRequest, setTimeout*/
   var loc     = location;
-  var host    = 'localhost';
+  var host    = loc.hostname + (loc.port ? ':' + loc.port : '');
   var timeout = setTimeout;
   var ref, check, xhr, lastModified, time;
   if (loc.host === host) {
