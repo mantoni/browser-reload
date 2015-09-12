@@ -11,5 +11,5 @@ install:
 
 release:
 	git tag -a -m "Release ${version}" v${version}
-	git push --tags
+	git push --follow-tags
 	npm publish
