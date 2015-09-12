@@ -9,9 +9,13 @@
     "type"          : "git",
     "url"           : "https://github.com/mantoni/browser-reload.git"
   },
+  "scripts"         : {
+    "test"          : "jslint --edition=latest --color reload.js",
+    "minify"        : "uglifyjs reload.js -m -c > reload.min.js"
+  },
   "devDependencies" : {
     "uglify-js"     : "~2.3.2",
-    "autolint"      : "~1.1.3"
+    "jslint"        : "^0.8"
   },
   "files"           : ["reload.js", "reload.min.js", "README.md", "LICENSE"],
   "license"         : "MIT"

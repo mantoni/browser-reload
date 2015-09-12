@@ -1,19 +1,15 @@
-PATH := node_modules/.bin:${PATH}
+SHELL := /bin/bash
 
-version = `node -e "console.log(require('./package.json').version)"`
-name    = "reload"
+version = $(shell node -p "require('./package.json').version")
 
 default:
-	@autolint --once
-	@uglifyjs ${name}.js -m -c > ${name}.min.js
+	npm test
+
+install:
+	rm -rf node_modules
+	npm install
 
 release:
-ifeq (v${version},$(shell git tag -l v${version}))
-	@echo "Version ${version} already released!"
-endif
-	@make
-	@echo "Creating tag v${version}"
-	@git tag -a -m "Release ${version}" v${version}
-	@git push --tags
-	@echo "Publishing to NPM"
+	git tag -a -m "Release ${version}" v${version}
+	git push --tags
 	npm publish
