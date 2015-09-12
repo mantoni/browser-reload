@@ -1,6 +1,6 @@
 {
   "name"            : "browser-reload",
-  "version"         : "1.0.1",
+  "version"         : "1.1.0",
   "description"     : "Reload web pages on change",
   "main"            : "./reload.js",
   "author"          : "Maximilian Antoni (http://maxantoni.de)",
