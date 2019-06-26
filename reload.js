@@ -13,7 +13,7 @@
         lastModified = this.getResponseHeader('Last-Modified');
         time = new Date(lastModified).getTime();
         if (time > ref) {
-          loc.reload();
+          loc.reload(true);
         } else {
           timeout(check, 1000);
         }
