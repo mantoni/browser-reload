@@ -17,7 +17,7 @@
     "minify"        : "uglifyjs reload.js -m -c > reload.min.js"
   },
   "devDependencies" : {
-    "uglify-js"     : "~2.3.2",
+    "uglify-js"     : "~3.6.6",
     "jslint"        : "^0.8"
   },
   "files"           : ["reload.js", "reload.min.js", "README.md", "LICENSE"],
